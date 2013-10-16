@@ -1,4 +1,4 @@
-# Create the rrd file that stores the temperature data by calling this from the command line (replace `filename.rrd` with whatever you want to name it)
+Create the rrd file that stores the temperature data by calling this from the command line (replace `filename.rrd` with whatever you want to name it)
 
 ```
 rrdtool create filename.rrd \
@@ -17,7 +17,7 @@ rrdtool create filename.rrd \
 'RRA:AVERAGE:0.5:48:4380'
 ```
 
-# The rrd translated into simpler terms  (thanks to http://www.famzah.net/rrdwizard/import.php)
+The rrd translated into simpler terms  (thanks to http://www.famzah.net/rrdwizard/import.php)
 
 ```
 Available data sources (input data)

@@ -1,6 +1,6 @@
 #!/usr/bin/php
 <?php
-require_once('/path/to/nest-api/nest.class.php');
+require_once('vendor/nest-api/nest.class.php');
 
 // begin nest-api config
 define('USERNAME', 'Nest username');

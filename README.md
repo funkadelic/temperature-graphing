@@ -12,10 +12,10 @@ Getting started
 After you clone this repo, run a `git submodule init` then `git submodule update` to get the nest-api submodule checked out as well (files will be under `vendor/nest-api`)
 
 
-In `temperature.php` enter the following info:
+In `config.inc.php` enter the following info:
 
 * Your Nest login & password.
-* The url to the temperature module's XML status page
+* The url to the ControlByWeb temperature module's XML status page
 * Your wunderground PWS station ID & password
 
 Create your temperature RRD (see [CREATE_RRD.md](CREATE_RRD.md))

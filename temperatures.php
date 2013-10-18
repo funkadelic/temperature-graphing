@@ -1,15 +1,7 @@
 #!/usr/bin/php
 <?php
+require_once('config.inc.php');
 require_once('vendor/nest-api/nest.class.php');
-
-// begin nest-api config
-define('USERNAME', 'Nest username');
-define('PASSWORD', 'Nest password');
-date_default_timezone_set('America/Los_Angeles');
-// end nest-api config
-
-// the URL to your temperature module's XML page
-$temperature_module_url = "http://path/to/temperature/module/state.xml";
 
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $temperature_module_url);
@@ -60,10 +52,10 @@ if ($outdoor_temp == "U") {
 
 // create Weather Underground URL
 
-// Your wunderground station ID
-$wunderground_id = urlencode("wunderground station id");
-// Your wunderground password
-$wunderground_pwd = urlencode("wunderground password");
+// wunderground station ID
+$wunderground_id = urlencode($wunderground_id);
+// wunderground password
+$wunderground_pwd = urlencode($wunderground_pwd);
 // UTC timestamp
 $wunderground_timestamp = urlencode(gmdate('Y-m-d H:i:s'));
 // temperature value to upload
